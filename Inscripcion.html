@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>  
+	<script type="text/javascript" src="js/localStore.js"></script>
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/inscripcion.css">
+	 <script src ="js/inscripcion.js"></script>
+	 <script src ="js/inscri-Clonar.js"></script>
+	<title>Inscripciones</title>
+</head>
+<body>
+	<header class="main-header">
+			<div class="contenedor contenedor-flex">
+				<div class="logo-contenedor">
+					<h1 class="logo">ACADEMIA</h1>
+				</div>
+				<div class="buscador-contenedor">
+					<form action="" method="" id="curso" >
+						<div class="contenedor-interno">
+							<input list="cursos" name="curso" placeholder=" Buscar..." class="buscador">
+							<datalist id="cursos">
+								<option value="HTML5"/>
+								<option value="Java"/>
+								<option value="PHP"/>
+								<option value="JavaScript"/>
+								<option value=".NET"/>
+								<option value="MySQL"/>
+								<option value="CSS3"/>
+							</datalist>
+							<input type="button" class="boton-buscar">
+							<input type="image" src="img/lupa.png" class="boton-lupa">
+						</div>
+					</form>
+				</div>
+				<div class="carrito-contenedor">
+					<a href="Inscripcion.html" id="link-carrito"> 
+						<div class="contenedor-cant">
+							<p id="cantidad"></p>
+							</div>
+						<img src="img/carro-compra.png" alt="" class="carrito">
+						
+						
+					</a>
+					
+				</div>
+			</div>
+		</header>
+		<nav class="main-nav">
+			<div class="contenedor">
+	
+				<ul class="menu">
+					<li class="menu-item"><a href="index.html" class="menu-link">inicio</a></li>
+					<li class="menu-item"><a href="cursos.html" class="menu-link">cursos</a></li>
+					<li class="menu-item"><a href="calendario.html" class="menu-link">calendario</a></li>
+					<li class="menu-item"><a href="giftcard.html" class="menu-link">giftcard</a></li>
+					<li class="menu-item"><a href="contacto.html" class="menu-link">contacto</a></li>
+				</ul>
+			</div>
+			<br>
+		</nav>
+   <div class="contenedor-general">
+   		
+    <div id="myModal" class="modal">
+
+        <!-- Modal -->
+        <div class="modal-content">
+        <a id="close" class= "boton rojo"  href="#close">Cerrar</a>
+        <h1>Personas Inscriptas</h1>
+        <div id ="ingresar_per">
+
+        </div>
+
+      </div>
+    </div>
+    
+    
+    <section class="seccion_inscripcion">
+        <form>
+            <fieldset>
+                <legend>INSCRIPCION</legend>
+                 <div class="celdas">
+        					
+         						<input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            				<input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+            				<input type="number" id="dni" name="dni" placeholder="Ingrese su DNI">
+           
+           					<input type="text" id="email" name="email" placeholder="Ingrese su mail">            <div id="mensaje" class="error">
+
+            			</div>
+              			<img src="img/minus.png" id ="menos" class="eliminar boton_redondo">
+         					</div>
+               
+           </fieldset>
+            <div>
+                <img src="img/plus.png" id ="agregar" class="boton_redondo">
+                <span>Agregar Persona</span>
+            </div>
+            <div>
+                <span id="valor_total"></span>
+                <input type="submit"  id="insc" value="INSCRIBIRSE"> 
+            </div>            
+        </form>
+
+    </section>
+    
+   </div>
+   
+    
+		
+        <br><br><br>
+        <footer class="main-footer">
+			<div class="contenedor contenedor-flex">
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Integrantes</h2>
+					<p class="integrante">Pereira Rodrigo - 39.464.179</p>
+					<p class="integrante">Ibarrola Emanuel - 38.031.525</p>
+					<p class="integrante">Morinigo Diego - 39.374.219</p>
+				</div>
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Menu Inferior</h2>
+				</div>
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Redes Sociales</h2>
+					<div class="contenedor-social">
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/facebook.png" alt="" class="red-social-img"><span>Facebook</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/twitter.png" alt="" class="red-social-img"><span>Twitter</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/instagram.png" alt="" class="red-social-img"><span>Instagram</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/youtube.png" alt="" class="red-social-img"><span>Youtube</span></a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+</body>
+</html>

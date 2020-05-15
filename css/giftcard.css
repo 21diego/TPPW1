@@ -1,0 +1,230 @@
+#titulo{
+  font-size: 2em;
+}
+.evento_personalizado{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+/*---Estilos vista previa---*/
+.contenedor_izq{
+
+  width : 100%;
+  margin:2%;
+  text-align: center;
+
+}
+.imagen_re{
+    display: flex;
+    position: relative;
+    background-color : grey;
+    height: 200px;
+    width:  100%;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+	border-radius: 20px;
+}
+.edicion{
+	border-top: solid 2px #20BB7B;
+    padding: 10px;
+    width: 50%;
+    margin:auto;
+}
+
+div.bloque_titulo{
+    position : absolute;
+    width: 100%;
+    text-align: center;
+	line-height: 200px;
+}
+#editar_titulo {
+	font-size: 20px;
+	width: 80%;
+	height: 40px;
+	border: 2px solid #20BB7B;
+	border-radius: 10px;
+}
+.margin_auto{
+  margin:auto;
+  color: red;
+}
+div.bloque_fecha{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: right;
+    padding: 2%;
+}
+
+.bloque_monto {
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+	font-size: 1.3em;
+	text-align: left;
+}
+
+/*---Estilos personalizacion---*/
+.opciones{
+  display: inline-block;
+  margin: 3px;
+  text-align: center;
+
+}
+
+.opciones > img {
+  width: 35px;
+}
+.colores
+{
+    width: 30px;
+    height: 30px;
+}
+.border_radius{
+
+  border-radius: 50%;
+}
+.rojo_ev{
+    background: red;
+}
+.azul
+{
+background: blue;
+}
+.black
+{
+    background: black;
+}
+.amarillo
+{
+    background: yellow;
+}
+.naranja
+{
+    background: orange;
+}
+.px20{
+  display: inline-block;
+  font-size: 1.3vh;
+}
+
+.px28{
+  font-size: 1.6vh;
+}
+
+.px32{
+  font-size: 1.8vh;
+}
+
+.px48{
+  font-size: 2vh;
+}
+
+.px60{
+  font-size: 2.2vh;
+}
+.subtitulos{
+  font-size:1.8vh;
+  color: grey;
+}
+
+@media(max-width: 815px){
+  .evento_personalizado{
+      flex-wrap: wrap;
+  }
+  .edicion{
+    text-align: center;
+  }
+  .contenedor_izq{
+      width: 100%;
+  }
+  .align_center{
+    width: 100%;
+  }
+  .edicion{
+    width: 100%;
+  }
+
+}
+.contenedor-monto {
+	display: block;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+.contenedor-monto input{
+	font-size: 20px;
+	width: 80%;
+	height: 40px;
+	border: 2px solid #20BB7B;
+	border-radius: 10px;
+}
+
+#btn-confirmar {
+	margin: 10px;
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+	color: #20BB7B;
+	background: white;
+	border: 2px solid #20BB7B;
+	border-radius: 5px;
+	text-transform: uppercase
+}
+#btn-confirmar:hover{
+	background: #20BB7B;
+	color: white;
+}
+
+/*--------Estilos Responsive--------*/
+@media screen and (min-width:600px) {
+	
+	#titulo {
+	font-size: 2em;
+	}
+	.imagen_re {
+		width: 70%;
+		height: 300px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.imagen_re {
+		margin-top: 20%;
+		height:  50%;
+		width: 100%;
+	}
+	#titulo {
+		font-size: 2.5em;
+	}
+	#monto {
+		font-size: 2em;
+		
+	}
+	.bloque_monto {
+	bottom: 10px;
+}
+.contenedor_izq {
+	width: 50%;
+}
+	.contenedor-monto{
+		margin-left: 10px;
+	}
+	.edicion {
+		border-top: none;
+	}
+}
+@media screen and (min-width:1366px) {
+	.contenedor-principal {
+		width: 1024px;
+		margin: auto;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/localStore.js"></script>
+		<script type="text/javascript" src="js/contacto.js"></script>
+		
+		<title>Proyecto Programacion Web 1</title><!--Titulo de la pagina-->
+		<meta charset="utf-8"><!--Codificacion-->
+		<meta name="description" content="Los mejores cursos del mundo en un solo lugar!"> <!--Descripcion-->
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/index.css"><!--Enlace con hoja de estilo css-->
+		<link rel="stylesheet" href="css/contacto.css">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="contenedor contenedor-flex">
+				<div class="logo-contenedor">
+					<h1 class="logo">ACADEMIA</h1>
+				</div>
+				<div class="buscador-contenedor">
+					<form action="" method="" id="curso" >
+						<div class="contenedor-interno">
+							<input list="cursos" name="curso" placeholder=" Buscar..." class="buscador">
+							<datalist id="cursos">
+								<option value="HTML5"/>
+								<option value="Java"/>
+								<option value="PHP"/>
+								<option value="JavaScript"/>
+								<option value=".NET"/>
+								<option value="MySQL"/>
+								<option value="CSS3"/>
+							</datalist>
+							<input type="button" class="boton-buscar">
+							<input type="image" src="img/lupa.png" class="boton-lupa">
+						</div>
+					</form>
+				</div>
+				<div class="carrito-contenedor">
+					<a href="Inscripcion.html" id="link-carrito"> 
+						<div class="contenedor-cant">
+							<p id="cantidad"></p>
+							</div>
+						<img src="img/carro-compra.png" alt="" class="carrito">
+						
+						
+					</a>
+					
+				</div>
+			</div>
+		</header>
+		<nav class="main-nav">
+			<div class="contenedor">
+				<!--<img src="img/menu.png" alt="" class="img-menu">-->
+				<ul class="menu">
+					<li class="menu-item"><a href="index.html" class="menu-link">inicio</a></li>
+					<li class="menu-item"><a href="cursos.html" class="menu-link">cursos</a></li>
+					<li class="menu-item"><a href="calendario.html" class="menu-link">calendario</a></li>
+					<li class="menu-item"><a href="giftcard.html" class="menu-link">giftcard</a></li>
+					<li class="menu-item"><a href="contacto.html" class="menu-link menu-link-select">contacto</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="contenedor-general">
+			<div class="contenedor-banner">
+				<img src="img/contactenos.jpg" alt="contacto-slider" class="banner-img">
+			</div>
+			<section class="contenedor-informacion">
+				<p class="info-mensaje">
+					Gracias por interesarse en nosotros, estamos a su disposición. Ante cualquier duda, te esperamos en el Instituto para conversar sobre cualquier inquietud o asesoramiento que usted necesite.
+				</p>
+				<article class="contenedor-datos">
+					<dl class="lista-datos">
+						<dt class="datos-titulo">Direccion</dt>
+						<dd class="datos-contenido">Florencio Varela 1903, B1754 San Justo, Buenos Aires</dd>
+						<dt class="datos-titulo">Telefono</dt>
+						<dd class="datos-contenido">0810-111-UNLAM</dd>
+						<dt class="datos-titulo">horarios de atencion:</dt>
+						<dd class="datos-contenido">Lunes a Viernes de  09 a 16 hs</dd>
+						<dd class="datos-contenido">Sabados de 09 a 12 hs</dd>
+					</dl>
+				</article>
+				<article class="contenedor-form-contacto"></article>
+			</section>
+			<section class="contenedor-form-contacto">
+				<h2 class="form-titulo">Contacto</h2>
+				<form action="" class="formulario">
+					<input type="text" id="nombre" class="campo" placeholder="Ingrese su Nombre">
+					<input type="text" id="apellido" class="campo" placeholder="Ingrese su Apellido">
+					<input type="mail" id="email" class="campo" placeholder="Ingrese su email">
+					<input type="tel" id="telefono" class="campo" placeholder="Ingrese un telefono">
+					<input type="text" id="provincia" class="campo" placeholder="Ingrese su provincia">
+					
+						<textarea id="comentario" class="campo" placeholder="Ingrese un comentario"></textarea>
+				
+					<div id="mensaje"></div>
+					<div id="mensaje1"></div>
+					<input type="submit" id="btn-enviar" class="campo" value="Enviar">
+				</form>
+			</section>
+
+			<!------------------------------ mapa --------------------------------->
+			<div class="mapa">
+				<h2 class="mapa-titulo">Ubicanos</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.495405439886!2d-58.5628652!3d-34.6705129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1570776827582!5m2!1ses-419!2sar" width="1100" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+		</div>
+
+
+		<footer class="main-footer">
+			<div class="contenedor contenedor-flex">
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Integrantes</h2>
+					<p class="integrante">Pereira Rodrigo - 39.464.179</p>
+					<p class="integrante">Ibarrola Emanuel - 38.031.525</p>
+					<p class="integrante">Morinigo Diego - 39.374.219</p>
+				</div>
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Menu Inferior</h2>
+				</div>
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Redes Sociales</h2>
+					<div class="contenedor-social">
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/facebook.png" alt="" class="red-social-img"><span>Facebook</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/twitter.png" alt="" class="red-social-img"><span>Twitter</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/instagram.png" alt="" class="red-social-img"><span>Instagram</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/youtube.png" alt="" class="red-social-img"><span>Youtube</span></a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

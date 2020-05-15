@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/localStore.js"></script>
+<script type="text/javascript" src="js/giftcard.js"></script>
+	<title>Proyecto Programacion Web 1</title><!--Titulo de la pagina-->
+	<meta charset="utf-8"><!--Codificacion-->
+	<meta name="description" content="Los mejores cursos del mundo en un solo lugar!"> <!--Descripcion-->
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css"><!--Enlace con hoja de estilo css-->
+	<link rel="stylesheet" href="css/giftcard.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="contenedor contenedor-flex">
+			<div class="logo-contenedor">
+				<h1 class="logo">ACADEMIA</h1>
+			</div>
+			<div class="buscador-contenedor">
+				<form action="" method="" id="curso" >
+						<div class="contenedor-interno">
+							<input list="cursos" name="curso" placeholder=" Buscar..." class="buscador">
+							<datalist id="cursos">
+							<option value="HTML5"/>
+							<option value="Java"/>
+							<option value="PHP"/>
+							<option value="JavaScript"/>
+							<option value=".NET"/>
+							<option value="MySQL"/>
+							<option value="CSS3"/>
+							</datalist>
+						<input type="button" class="boton-buscar">
+						<input type="image" src="img/lupa.png" class="boton-lupa">
+						</div>
+					</form>
+			</div>
+			<div class="carrito-contenedor">
+					<a href="Inscripcion.html" id="link-carrito"> 
+						<div class="contenedor-cant">
+							<p id="cantidad"></p>
+							</div>
+						<img src="img/carro-compra.png" alt="" class="carrito">
+						
+						
+					</a>
+					
+				</div>
+		</div>
+	</header>
+	<nav class="main-nav">
+		<div class="contenedor">
+			<!--<img src="img/menu.png" alt="" class="img-menu">-->
+			<ul class="menu">
+				<li class="menu-item"><a href="index.html" class="menu-link">inicio</a></li>
+				<li class="menu-item"><a href="cursos.html" class="menu-link">cursos</a></li>
+				<li class="menu-item"><a href="calendario.html" class="menu-link">calendario</a></li>
+				<li class="menu-item"><a href="giftcard.html" class="menu-link  menu-link-select">giftcard</a></li>
+				<li class="menu-item"><a href="contacto.html" class="menu-link">contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<main class="contenedor-principal">
+		<div class = "evento_personalizado">
+        <div class = "contenedor_izq">
+          <section class = "imagen_re">
+              <div class = "bloque_titulo">
+                  <p id = "titulo">Destinatario</p>
+                  
+              </div>
+              <div class="bloque_monto">
+              	<p id="monto">$<span>000</span></p>
+              </div>
+              <div class = "bloque_fecha">
+								<h4 id="date_img">2018-06-12 19:30</h4>
+              </div>
+          </section>
+            <h3> Vista Previa de Resultado de Personalizacion<br></h3>
+        </div>
+        <section class = "edicion">
+            <h3>Personalización de Invitación</h3>
+            <form>
+            <p class="subtitulos">Destinatario</p>
+            <input type = "text" placeholder="Ingrese destinatario" id="editar_titulo">
+            <p class = "subtitulos"><br>Color
+            <div>
+                <div class="opciones">
+                    <div class="colores  border_radius rojo_ev">
+                    </div>
+                    <input type="radio" value = "red" name ="color">
+                </div>
+                <div class="opciones">
+                    <div class="colores  border_radius naranja">
+                    </div>
+                    <input type="radio" value = "orange" name ="color">
+                </div>
+                <div class="opciones">
+                    <div class="colores  border_radius black">
+                    </div>
+                    <input type="radio" value = "black" name ="color">
+                </div>
+                <div class="opciones">
+                    <div class="colores  border_radius amarillo">
+                    </div>
+                    <input type="radio" value = "yellow" name ="color">
+                </div>
+                <div class="opciones">
+                    <div class="colores  border_radius azul">
+                    </div>
+                    <input type="radio" value = "blue" name ="color">
+                </div>
+            </div>
+            <p class = "subtitulos">Tamaño de fuente</p>
+            <div>
+                <div class="opciones">
+                    <span class = "px20" >20px</span>
+                    <input type="radio" value ="20" name ="fuente">
+                </div>
+                <div class="opciones">
+                    <span class = "px28" >28px</span>
+                    <input type="radio" value ="28" name ="fuente">
+                </div>
+                <div class="opciones">
+                      <span class = "px32" >32px</span>
+                      <input type="radio" value ="32" name ="fuente">
+                </div>
+                <div class="opciones">
+                  <span class = "px48" >48px</span>
+                  <input type="radio" value ="48" name ="fuente">
+                </div>
+                <div class="opciones">
+                  <span class = "px60" >60px</span>
+                  <input type="radio" value ="60" name ="fuente">
+                </div>
+            </div>
+            
+
+            <p class = "subtitulos"><br>Ubicación</p>
+            <div>
+                <div class="opciones">
+									<img src="img/ubicacion1.png">
+                  <input type="radio" value="1"name ="subtitulo">
+                </div>
+                <div class="opciones">
+                  <img src="img/ubicacion2.png">
+                  <input type="radio" value="2" name ="subtitulo">
+                </div>
+                <div class="opciones">
+                  <img src="img/ubicacion3.png">
+                  <input type="radio" value="3" name ="subtitulo">
+                </div>
+            </div>
+            <p class = "subtitulos">Fondo</p>
+            <div>
+                <div class="opciones">
+                    <div class="colores rojo_ev">
+                    </div>
+                    <input type="radio" value="red" name ="color_fondo">
+                </div>
+                <div class="opciones">
+                    <div class="colores naranja">
+                    </div>
+                    <input type="radio" value="orange" name ="color_fondo">
+                </div>
+                <div class="opciones">
+                    <div class="colores black">
+                    </div>
+                    <input type="radio" value="black" name ="color_fondo">
+                </div>
+                <div class="opciones">
+                    <div class="colores amarillo">
+                    </div>
+                    <input type="radio" value="yellow" name ="color_fondo">
+                </div>
+                <div class="opciones">
+                    <div class="colores azul">
+                    </div>
+                    <input type="radio" value="blue" name ="color_fondo">
+                </div>
+
+            </div>
+            <p class="subtitulos">Monto</p>
+            <div class="contenedor-monto">
+							<input type="text" name="monto" id="editar_monto">
+					</div>
+           <div>
+           	<input id = "data_time" value ="2018-06-12T19:30" type = "datetime-local" >
+           </div>
+           
+            <input type="submit" name ="color" id="btn-confirmar"value = "Confirmar">
+
+            </form>
+        </section>
+
+    </div>
+	
+	</main>
+	
+	<footer class="main-footer">
+			<div class="contenedor contenedor-flex">
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Integrantes</h2>
+					<p class="integrante">Pereira Rodrigo - 39.464.179</p>
+					<p class="integrante">Ibarrola Emanuel - 38.031.525</p>
+					<p class="integrante">Morinigo Diego - 39.374.219</p>
+				</div>
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Menu Inferior</h2>
+				</div>
+				<div class="columna columna-33">
+					<h2 class="columna-titulo">Redes Sociales</h2>
+					<div class="contenedor-social">
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/facebook.png" alt="" class="red-social-img"><span>Facebook</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/twitter.png" alt="" class="red-social-img"><span>Twitter</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/instagram.png" alt="" class="red-social-img"><span>Instagram</span></a></p>
+						<p class="red-social"><a href="#" class="red-social-link"><img src="img/youtube.png" alt="" class="red-social-img"><span>Youtube</span></a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>

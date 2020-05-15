@@ -1,0 +1,87 @@
+/*------------Estilos Banner------------*/
+.contenedor-banner{
+	width: 100%;
+}
+
+/*------------Estilos Informacion------------*/
+.contenedor-informacion {
+	padding: 10px;
+}
+.contenedor-datos {
+	border-top: 2px solid #20BB7B;
+	border-bottom: 2px solid #20BB7B;
+}
+.datos-titulo{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.datos-contenido {
+	font-style: italic;
+}
+
+/*------------Estilos Informacion------------*/
+.contenedor-form-contacto{
+	width: 100%;
+	text-align: center;
+}
+.formulario {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+	border-bottom: 2px solid #20BB7B;
+	margin-bottom: 15px;
+}
+.campo {
+	margin-bottom: 10px;
+	height: 35px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.formulario textarea {
+	height: 70px;
+}
+#mensaje,#mensaje1{
+	color: red;
+}
+/*------------Estilos Mapa------------*/
+.mapa {
+	width: 100%;
+}
+.mapa-titulo {
+	text-align: center;
+}
+.mapa iframe {
+	width: 100%;
+	height: 300px;
+}
+
+/*------------Estilos Responsive------------*/
+@media screen and (min-width:480px) {
+	
+}
+@media screen and (min-width:768px) {
+	.contenedor-informacion {
+		width: 50%;
+		float: left;
+		display: block;
+	}
+	.contenedor-form-contacto{
+		width: 50%;
+		float: left;
+		display: block;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	
+}
+@media screen and (min-width:1366px) {
+	.contenedor-general {
+		width: 1024px;
+		margin: auto;
+	}
+}
+
+
