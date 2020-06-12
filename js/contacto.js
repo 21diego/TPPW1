@@ -56,8 +56,6 @@ function validarFormu(){
 		$("#mensaje1").append(mensaje);
         return true;
     }
-		
-		});
 }
 
 function reset(){
